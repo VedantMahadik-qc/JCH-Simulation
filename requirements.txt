@@ -1,0 +1,8 @@
+qutip>=5.0.0
+numpy
+matplotlib
+scipy
+jupyter
+notebook
+imageio
+tqdm
