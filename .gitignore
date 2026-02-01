@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+venv/
+.env
+.DS_Store
+
+# --- Julia ---
+*.ji
+*.cov
+*.mem
+*.tmp
+log/
+
+# --- Project Specific ---
+# Ignore large animation outputs if you don't want them in GitHub
+output/animations/*.gif
+output/data/*.csv
+
+# Keep empty folders
+!output/figures/.gitkeep
+!output/animations/.gitkeep
