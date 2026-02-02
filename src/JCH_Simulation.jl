@@ -1,4 +1,4 @@
-module JCHModels
+module JCH_Simulation
 
 using QuantumOptics
 
