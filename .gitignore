@@ -15,7 +15,9 @@ venv/
 *.ji
 *.cov
 *.mem
-/julia/Manifest.toml       # lockfile: keep out of git for a library
+# Lockfile: keep out of git for a library - consumers resolve against the
+# [compat] bounds in Project.toml, not a pinned snapshot.
+/julia/Manifest.toml
 deps/build.log
 
 # --- Editors / OS ---
