@@ -1,0 +1,27 @@
+# Normalise line endings so a Windows checkout and Linux CI agree.
+# Text files are stored LF in the repository and checked out native on Windows.
+* text=auto
+
+# Explicitly LF in the repo for anything a Unix toolchain executes or parses.
+*.py     text eol=lf
+*.jl     text eol=lf
+*.toml   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.md     text eol=lf
+*.cfg    text eol=lf
+*.txt    text eol=lf
+*.csv    text eol=lf
+.gitignore     text eol=lf
+.gitattributes text eol=lf
+
+# Notebooks are JSON: treat as text so diffs work, but never let git
+# rewrite line endings inside them (it corrupts the JSON on some tools).
+*.ipynb  text eol=lf
+
+# Binary — never diff, never touch.
+*.png    binary
+*.jpg    binary
+*.gif    binary
+*.mp4    binary
+*.pdf    binary
