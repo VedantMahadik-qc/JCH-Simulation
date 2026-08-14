@@ -42,3 +42,6 @@ results/figures/*.png
 !results/figures/julia_scaling.png
 !results/figures/sparsity_pattern.png
 !results/figures/sparsity_pattern_julia.png
+
+# Scratch figures extracted for the report - not repo artefacts
+figures_report/
